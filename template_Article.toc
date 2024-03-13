@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}شرح پروژه}{3}{}%
+\contentsline {section}{\numberline {2}موجودیت ها}{3}{}%
+\contentsline {subsection}{\numberline {2.1}فروشگاه}{3}{}%
+\contentsline {subsection}{\numberline {2.2}شعبه}{3}{}%
+\contentsline {subsection}{\numberline {2.3}مشتری}{4}{}%
+\contentsline {subsection}{\numberline {2.4}آیتم}{4}{}%
+\contentsline {subsection}{\numberline {2.5}سبد خرید}{4}{}%
+\contentsline {subsection}{\numberline {2.6}سفارش}{5}{}%
+\contentsline {subsection}{\numberline {2.7}محصول}{5}{}%
+\contentsline {subsection}{\numberline {2.8}نظرات}{6}{}%
+\contentsline {subsection}{\numberline {2.9}مدیر}{7}{}%
+\contentsline {section}{\numberline {3}گزارش ها}{7}{}%

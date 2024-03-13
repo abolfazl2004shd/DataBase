@@ -1,0 +1,255 @@
+\documentclass[]{article}
+\usepackage{titling}
+\usepackage{xepersian}
+\settextfont{Arial}
+
+%opening 
+
+\title{ الهی به توکل نام اعظمت  }
+
+\author{
+فاز اول پروژه اصول طراحی پایگاه داده
+ }
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\textbf{سیستم خرید آنلاین لباس}
+\end{center}
+
+
+\begin{center}
+\textbf{میثم عسلی 401521435 - ابوالفضل شهیدی 401521381}
+\end{center}
+
+\newpage
+\tableofcontents
+\newpage
+\section{شرح پروژه}
+مدیر فروشگاه با ثبت نام در سایت و ثبت شعب مختلف آن, می تواند اطلاعاتی نظیر آدرس, شماره تلفن, ساعت کار , محصولات  را به نمایش کاربران بگذارد.هر محصول شامل ویژگی هایی نظیر سایز, رنگ, قیمت, درصد رضایت و تعداد باقی مانده در انبار می باشد. کاربران با ثبت نام در سایت و افزایش  اعتبار خود, می توانند سفارش خود را ثبت کنند.
+هر سفارش می تواند یک یا چندین آیتم باشد و هر آیتم شامل یک محصول و تعداد است.
+همچنین کاربران می تواننند نظر خود را راجب محصولی که قبلا خریداری کرده اند ثبت کنند. 
+\section{موجودیت ها}
+
+
+
+
+
+
+\subsection{فروشگاه}
+این موجودیت یکی از مهم ترین موجودیت های سیستم است که شامل یک یا چند شعبه است.
+\begin{itemize}
+\item کد فروشگاه
+\item نام فروشگاه
+\item تاریخ ثبت  
+\item شناسه مدیر
+
+\end{itemize}
+
+
+
+
+
+
+
+
+\subsection{شعبه}
+هر شعبه متعلق به یک فروشگاه می باشد و شامل محصولاتی می باشد.
+\begin{itemize}
+\item نام شعبه
+\item کد شعبه
+\item کد فروشگاه
+\item تاریخ ثبت  
+\item کد پستی
+\item کشور
+\item شهر
+\item آدرس
+\item شماره تلفن
+\end{itemize}
+
+
+
+
+
+
+\subsection{مشتری}
+\begin{itemize}
+\item شماره مشتری
+\item نام کاربری
+\item نام
+\item نام خانوادگی
+\item کد ملی
+\item جنسیت
+\item آدرس
+\item کد پستی
+\item شماره موبایل
+\item ایمیل
+\item رمز عبور
+\end{itemize}
+
+
+
+
+
+
+
+\subsection{آیتم}
+هر آیتم متعلق به یک سبد خرید است
+
+\begin{itemize}
+\item شناسه آیتم
+\item شناسه محصول
+\item تعداد
+\item قیمت اولیه \newline
+حاصل ضرب قیمت محصول و تعداد آن
+\item تخفیف \newline
+حاصل ضرب تخفیف محصول در قیمت اولیه
+\item قیمت نهایی \newline
+قیمت اولیه منهای تخفیف
+\end{itemize}
+
+
+
+
+
+
+
+
+\subsection{سبد خرید}
+هر سبد خرید متعلق به یک سفارش و شامل چندین آیتم است و اگر نهایی شود یک سفارش جدید ایجاد می شود.
+\begin{itemize}
+\item شناسه سبد خرید
+\item شناسه سفارش
+\item نهایی شده
+\begin{enumerate}
+\item بله \newline
+پس از پرداخت هزینه نهایی می شود و یک سفارش جدید ایجاد می شود.
+\item خیر \newline
+\end{enumerate}
+
+\end{itemize}
+
+
+
+
+
+
+\subsection{سفارش}
+هر سفارش شامل یک سبد خرید است.
+\begin{itemize}
+\item شماره سفارش
+\item شماره مشتری
+\item شناسه سبد خرید
+\item تاریخ ثبت سفارش
+\item زمان تحویل
+\item تخفیف کل
+حاصل جمع تخفیف تمامی آیتم ها
+\item قیمت اولیه محصولات
+حاصل جمع قیمت اولیه همه آیتم ها
+\item قیمت نهایی محصولات
+قیمت اولیه منهای تخفیف کل
+\item هزینه ارسال 
+\item مبلغ نهایی \newline
+حاصل جمع هزینه ارسال و قیمت نهایی محصولات
+\end{itemize}
+
+
+
+
+
+
+
+
+
+\subsection{محصول}
+\begin{itemize}
+\item شماره محصول
+\item عکس
+\item سایز
+\item رنگ
+\item قیمت
+\item درصد رضایت
+\item باقی مانده
+\item درصد تخفیف \newline
+عددی بین 0 و 100
+\item  نوع لباس
+\begin{enumerate}
+\item مردانه
+\item زنانه
+\item بچگانه
+\end{enumerate}
+\item کشور تولید کننده
+\item جنس
+\begin{enumerate}
+\item پنبه
+\item الیاف طبیعی
+\item نخ
+\item پلی استر
+\end{enumerate}
+\item توضیح محصول
+\end{itemize}
+
+
+
+
+
+
+
+\subsection{نظرات}
+هر کابری که قبلا محصول را خریداری کرده است می تواند نظر خود را درباره آن محصول ثبت نماید.
+\begin{itemize}
+\item شماره نظر
+\item شماره مشتری
+\item عنوان نظر
+\item نقاط قوت  
+\item نقاط ضعف
+\item متن نظر
+\item دیدگاه اجمالی
+\begin{enumerate}
+\item خیلی بد
+\item بد
+\item معمولی
+\item  خوب
+\item  خیلی خوب
+\end{enumerate}
+\item ارسال به صورت ناشناس
+\begin{enumerate}
+\item بله
+\item خیر
+\end{enumerate}
+\end{itemize}
+
+
+
+
+
+\subsection{مدیر}
+مدیر نماینده یک فروشگاه محسوب می شود و وظیفه ثبت فروشگاه و شعب آن را دارد.
+\begin{itemize}
+\item شناسه مدیر
+\item نام کابری
+\item نام
+\item نام خانوادگی
+\item کد ملی
+\item جنسیت
+\item ایمیل
+\item تاریخ ثبت نام
+\item رمز عبور
+\end{itemize}
+
+
+
+
+
+
+
+\section{گزارش ها}
+
+
+
+\end{document}
+}
+
+
+
