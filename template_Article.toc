@@ -7,6 +7,7 @@
 \contentsline {subsection}{\numberline {2.5}آیتم}{5}{}%
 \contentsline {subsection}{\numberline {2.6}سبد خرید}{5}{}%
 \contentsline {subsection}{\numberline {2.7}سفارش}{6}{}%
-\contentsline {subsection}{\numberline {2.8}نظرات}{6}{}%
+\contentsline {subsection}{\numberline {2.8}نظر}{6}{}%
 \contentsline {subsection}{\numberline {2.9}مدیر}{7}{}%
 \contentsline {section}{\numberline {3}گزارش ها}{7}{}%
+\contentsline {section}{\numberline {4}روابط}{8}{}%
